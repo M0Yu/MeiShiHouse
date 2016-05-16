@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fanjie="http://schemas.android.com/apk/res/com.example.classfy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/personalInfoHeadRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personalinfo_head_relativelayout_background" >
+
+        <Button
+            android:id="@+id/deletePersonalCollectButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/delete_personalcollection_button_background"
+            android:textColor="#ffffff"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/personalSettingButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/deletePersonalCollectButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/personalsettring_button_background" />
+
+        <com.aishangte.zmj.personalinfo.CircleImageView
+            android:id="@+id/userHeadPictureImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/deletePersonalCollectButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/not_login_imageview_background" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userHeadPictureImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="未登录"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/userNameTextView"
+            android:layout_marginTop="10dp"
+            android:alpha="0.3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/first"
+                style="@style/first_activity_fragemnt_title"
+                android:checked="true"
+                android:text="礼物"
+                 />
+
+            <RadioButton
+                android:id="@+id/second"
+                style="@style/first_activity_fragemnt_title"
+                android:layout_marginLeft="1dp"
+                android:text="食盒"
+                 />
+
+            <RadioButton
+                android:id="@+id/third"
+                style="@style/first_activity_fragemnt_title"
+                android:layout_marginLeft="1dp"
+                android:text="美食美文"
+                 />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <com.example.override.ScllorTabView
+        android:id="@+id/scllorTabView"
+        android:layout_width="wrap_content"
+        android:layout_height="2.0dp"
+        fanjie:width="0dp" >
+    </com.example.override.ScllorTabView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

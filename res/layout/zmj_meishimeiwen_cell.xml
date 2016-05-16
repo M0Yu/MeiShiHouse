@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_shape" >
+
+    <FrameLayout
+        android:id="@+id/meiShiMeiWenPicFrameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" >
+
+        <com.example.override.RoundRectImageView
+            android:id="@+id/MeiShiMeiWenRectImageViewPic"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_round_corners"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:id="@+id/meiShimeiWen_closeViewFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="#999999"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/close" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/meishimeiwenCollectionDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/meiShiMeiWenPicFrameLayout"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

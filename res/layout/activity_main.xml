@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_all_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/activity_main_tab_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/activity_main_bottom_line" />
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_main_tab_height"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/tabline" />
+
+            <RadioGroup
+                android:id="@+id/activity_main_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <RadioButton
+                    android:id="@+id/activity_main_radio_first_page"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_first_selector"
+                    android:tag="first_page"
+                    android:text="首页" />
+
+                <RadioButton
+                    android:id="@+id/activity_main_radio_second_page"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:drawableTop="@drawable/tab_second_selector"
+                    android:tag="second_page"
+                    android:text="分类" />
+
+                <RadioButton
+                    android:id="@+id/activity_main_radio_thired_page"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:drawableTop="@drawable/tab_thired_selector"
+                    android:tag="thired_pag"
+                    android:text="发现" />
+
+                <RadioButton
+                    android:id="@+id/activity_main_radio_four_page"
+                    style="@style/main_tab_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:drawableTop="@drawable/tab_foutrth_selector"
+                    android:tag="four_page"
+                    android:text="我" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

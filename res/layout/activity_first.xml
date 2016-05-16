@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fanjie="http://schemas.android.com/apk/res/com.example.classfy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_first_title"
+        layout="@layout/action_bar_classfy" >
+    </include>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/first"
+            style="@style/first_activity_fragemnt_title"
+            android:checked="true"
+            android:enabled="false"
+            android:text="活动" />
+
+        <RadioButton
+            android:id="@+id/second"
+            style="@style/first_activity_fragemnt_title"
+            android:layout_marginLeft="1dp"
+            android:enabled="false"
+            android:text="个性" />
+
+        <RadioButton
+            android:id="@+id/third"
+            style="@style/first_activity_fragemnt_title"
+            android:layout_marginLeft="1dp"
+            android:enabled="false"
+            android:text="对象" />
+
+        <RadioButton
+            android:id="@+id/fourth"
+            style="@style/first_activity_fragemnt_title"
+            android:layout_marginLeft="1dp"
+            android:enabled="false"
+            android:text="环境" />
+    </RadioGroup>
+
+    <com.example.override.ScllorTabView
+        android:id="@+id/scllorTabView"
+        android:layout_width="wrap_content"
+        android:layout_height="2.0dp"
+        fanjie:width="0dp" >
+    </com.example.override.ScllorTabView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

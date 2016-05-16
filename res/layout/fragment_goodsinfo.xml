@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <FrameLayout
+        android:id="@+id/sg_framePager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/sg_goodsPicViewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/sg_pointsGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sg_framePager" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sg_goodsNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="商品名"
+                android:textColor="#292929"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/sg_goodsPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sg_goodsNameText"
+                android:layout_below="@+id/sg_goodsNameText"
+                android:layout_marginTop="5dp"
+                android:text="价格"
+                android:textColor="#FF6244"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sg_goodsDesText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sg_goodsPriceText"
+                android:layout_below="@+id/sg_goodsPriceText"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:text="商品简介"
+                android:textColor="#3c3c3c" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

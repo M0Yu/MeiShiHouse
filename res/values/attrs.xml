@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="width" format="dimension" />
+
+    <declare-styleable name="ScllorTableView">
+        <attr name="width"></attr>
+    </declare-styleable>
+
+</resources>

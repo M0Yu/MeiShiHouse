@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/zmj_personal_setting_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sz_main_tuijian"
+            style="@style/layoutstyle"
+            android:onClick="onClick" >
+
+            <ImageView
+                style="@style/imagestyle"
+                android:src="@drawable/share" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="推荐给好朋友" >
+            </TextView>
+
+            <ImageView style="@style/arror_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sz_main_fankui"
+            style="@style/layoutstyle"
+            android:onClick="onClick" >
+
+            <ImageView
+                style="@style/imagestyle"
+                android:src="@drawable/reflect" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="意见反馈" >
+            </TextView>
+
+            <ImageView style="@style/arror_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sz_main_lianxi"
+            style="@style/layoutstyle"
+            android:onClick="onClick" >
+
+            <ImageView
+                style="@style/imagestyle"
+                android:src="@drawable/connect" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="联系美食物" >
+            </TextView>
+
+            <ImageView style="@style/arror_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sz_main_genxing"
+            style="@style/layoutstyle"
+            android:onClick="onClick" >
+
+            <ImageView
+                style="@style/imagestyle"
+                android:src="@drawable/refresh" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="检查更新" >
+            </TextView>
+
+            <ImageView style="@style/arror_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sz_main_qingli"
+            style="@style/layoutstyle"
+            android:onClick="onClick" >
+
+            <ImageView
+                style="@style/imagestyle"
+                android:src="@drawable/clear" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="清理缓存" >
+            </TextView>
+
+            <ImageView style="@style/arror_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sz_main_aboutus"
+        style="@style/layoutstyle"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick" >
+
+        <ImageView
+            style="@style/imagestyle"
+            android:src="@drawable/about" />
+
+        <TextView
+            style="@style/textstyle"
+            android:text="关于美食屋" >
+        </TextView>
+
+        <ImageView style="@style/arror_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sz_main_tuichu"
+        style="@style/layoutstyle"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="退出当前账号"
+            android:textColor="#FF6142" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

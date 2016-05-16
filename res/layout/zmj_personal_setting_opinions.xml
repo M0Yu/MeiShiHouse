@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ <include
+        android:id="@+id/title"
+        layout="@layout/zmj_personal_setting_title2"
+        />
+
+    <TextView
+        android:id="@+id/yourOpinionsTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:background="@drawable/myinfo_linelayouts_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/yourOpinions"
+        android:textSize="24dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/opinionsEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="258dp"
+        android:layout_below="@+id/yourOpinionsTextView"
+        android:background="@drawable/opinions_edittext_background"
+        android:gravity="top"
+        android:hint="@string/defaultOpinions"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/connectingMethod"
+        android:layout_width="fill_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/opinionsEditText"
+        android:background="@drawable/myinfo_linelayouts_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/connectingMethod"
+        android:textSize="24dp"
+        android:textColor="#000000" />
+    <EditText
+        android:id="@+id/connectingMethodEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="86dp"
+        android:layout_below="@+id/connectingMethod"
+        android:background="@drawable/opinions_edittext_background"
+        android:gravity="center_vertical|left"
+        android:hint="@string/defaultStringOfConnectingMetodEditText"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+</RelativeLayout>

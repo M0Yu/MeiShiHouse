@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_shape" >
+
+    <FrameLayout
+        android:id="@+id/goodsPicFrameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" 
+        android:layout_marginTop="5dp">
+
+        <com.example.override.RoundRectImageView
+            android:id="@+id/ds_goodsPic"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_round_corners"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:id="@+id/closeViewFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="#999999"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/close" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/ds_goodsDes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goodsPicFrameLayout"
+        android:background="#F9F9F9"
+        android:padding="5dp"
+        android:text="dec" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ds_goodsDes"
+        android:background="#F9F9F9"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/ds_goodsPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="¥39.90"
+            android:textColor="#FF0000" />
+    </RelativeLayout>
+
+</RelativeLayout>

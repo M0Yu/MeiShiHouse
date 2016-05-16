@@ -1,0 +1,65 @@
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include 
+        layout="@layout/meishiwu_title"/>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView 
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_pullToRefreshScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:scrollbars="none"
+    ptr:ptrAnimationStyle="rotate"
+    ptr:ptrMode="both" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/imageView"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/mei_shi_wu_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/imageView"
+                    android:layout_marginBottom="10dp"
+                    android:text="单身吃货，食物最长情的对白"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mei_shi_wu_detail_descript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="我们带您一起品京味儿特产，让老北京带给你不一样的饕餮盛宴。要说特产那就不得不提起宫廷食品【北京烤鸭】了，用料为优质肉食鸭北京鸭，果木炭火烤制，色泽红润，肉质肥而不腻，外脆里嫩。受宫廷青睐的【稻香村糕点】也是必须一提的，乾隆皇帝下江南于苏州品食稻香村糕点后，赞叹为“食中隽品，美味不可多得”并当即御题“稻香村”匾额而名扬天下。当然了，帝都还有其他的特产小吃，【北京酥糖】、【茯苓饼】、【京八件】、【蜜饯果脯】等等都是吃了一口还想再来一口的美味。"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>
